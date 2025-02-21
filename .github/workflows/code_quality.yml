@@ -1,8 +1,13 @@
 name: Check and test the source code
 on:
+    push:
+        branches:
+            - main
+            - feature/**
     pull_request:
         branches:
             - main
+            - feature/**
 jobs:
     test:
         name: Check the source code
